@@ -1,8 +1,51 @@
+
+
 * {
 padding: 0px;
 margin: 0px;
+box-sizing: border-box;
 }
- h1 {
-    text-align: center;
- }
+
+body {
+   /* vh = veiwport height = height of the entire screen */
+   min-height: 100vh; 
+   display: flex;
+   flex-direction: column;
+}
  
+header {
+   padding: 2% 1%;
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+header h1 {
+   font-size: 2.5rem;
+   font-weight: 200px;
+   margin-bottom: 1%;
+}
+
+#new-task-container {
+   display: flex; 
+}
+/* button and input styling */
+input, button {
+   appearance: none;
+   border: none;
+   outline: none;
+   background: none;
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+
+#task-input {
+   flex: 1 1 0%;
+}
+
+#tasks .task .content {
+   flex: 1 1 0%;
+}
