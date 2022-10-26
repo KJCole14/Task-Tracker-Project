@@ -1,13 +1,31 @@
+/* for assigning variables to colors... It looked cool so I wanted to try */
+:root {
+   --primary: ;
+   --business: ;
+   --personal: var(--primary);
+   --light: ;
+   --dark: ;
+   --danger: ;
 
+   --shadow: ;
+
+   --business-glow: ;
+   --personal-glow: ;
+}
 
 * {
 padding: 0px;
 margin: 0px;
 box-sizing: border-box;
+font-family: ;
 }
+/* rather than selecting specific inputs, this line just excludes certain inputs */
+input:not([type="radio"]):not([type="checkbox"]), button {
 
+}
+/* 
 body {
-   /* vh = veiwport height = height of the entire screen */
+   
    min-height: 100vh; 
    display: flex;
    flex-direction: column;
@@ -29,7 +47,7 @@ header h1 {
 #new-task-container {
    display: flex; 
 }
-/* button and input styling */
+
 input, button {
    appearance: none;
    border: none;
@@ -48,4 +66,4 @@ button:hover {
 
 #tasks .task .content {
    flex: 1 1 0%;
-}
+} */

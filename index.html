@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <h1>Task Master</h1>
       <form id="new-task-container">
         <input type="text" id="task-input" placeholder="What's the plan?" />
@@ -36,6 +36,96 @@
             </div>
           </div>
         </div>
+      </section>
+    </main> -->
+
+    <!-- new? -->
+    <main class="app">
+      <section class="greeting">
+        <h2 class="title">
+          Greetings
+          <input type="text" id="name" placeholder="name here" />
+        </h2>
+      </section>
+
+      <section class="create-task">
+        <h3>Create a task</h3>
+        <form id="new-task-form">
+          <h4>What's the plan?</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="anything is possible"
+          />
+
+          <h4>What category?</h4>
+          <div class="option">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Just Business</div>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>It's Personal</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Add Task" />
+        </form>
+      </section>
+
+      <section class="task-list">
+        <h3>What's on your list?</h3>
+        <div class="list" id="task-list">
+
+          <div class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble business"></span>
+            </label>
+
+            <div class="task-content">
+              <input type="text" value="do a thing" readonly />
+            </div>
+
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="task-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble personal"></span>
+          </label>
+
+          <div class="task-content">
+            <input type="text" value="and another thing!" readonly />
+          </div>
+
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+      </div>
       </section>
     </main>
     <script src="app.js"></script>
