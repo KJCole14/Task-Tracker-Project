@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- attempt 2 -->
+
     <!-- <header>
       <h1>Task Master</h1>
       <form id="new-task-container">
@@ -39,8 +41,10 @@
       </section>
     </main> -->
 
-    <!-- new? -->
+    <!-- attempt 3 -->
+
     <main class="app">
+      <!-- username -->
       <section class="greeting">
         <h2 class="title">
           Greetings
@@ -48,6 +52,7 @@
         </h2>
       </section>
 
+      <!-- Task form -->
       <section class="create-task">
         <h3>Create a task</h3>
         <form id="new-task-form">
@@ -57,6 +62,7 @@
             name="content"
             id="content"
             placeholder="anything is possible"
+            required
           />
 
           <h4>What category?</h4>
@@ -67,6 +73,7 @@
                 name="category"
                 id="category1"
                 value="business"
+                required
               />
               <span class="bubble business"></span>
               <div>Just Business</div>
@@ -78,6 +85,7 @@
                 name="category"
                 id="category2"
                 value="personal"
+                required
               />
               <span class="bubble personal"></span>
               <div>It's Personal</div>
@@ -88,44 +96,10 @@
         </form>
       </section>
 
+      <!-- Task List -->
       <section class="task-list">
         <h3>What's on your list?</h3>
-        <div class="list" id="task-list">
-
-          <div class="task-item">
-            <label>
-              <input type="checkbox" />
-              <span class="bubble business"></span>
-            </label>
-
-            <div class="task-content">
-              <input type="text" value="do a thing" readonly />
-            </div>
-
-            <div class="actions">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="task-item">
-          <label>
-            <input type="checkbox" />
-            <span class="bubble personal"></span>
-          </label>
-
-          <div class="task-content">
-            <input type="text" value="and another thing!" readonly />
-          </div>
-
-          <div class="actions">
-            <button class="edit">Edit</button>
-            <button class="delete">Delete</button>
-          </div>
-        </div>
-      </div>
+        <div class="list" id="task-list"></div>
       </section>
     </main>
     <script src="app.js"></script>
