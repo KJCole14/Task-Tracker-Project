@@ -19,7 +19,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* font-family: 'montserrat', sans-serif; */
 }
 
 /* rather than selecting specific inputs, this line just excludes certain inputs */
